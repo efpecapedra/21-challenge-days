@@ -9,7 +9,6 @@
     align-items: center;
     flex-direction: column;
     margin: 10%;
-
 }
 
 .hello {
@@ -28,6 +27,7 @@
     height: 300px;
     position: absolute;
     transform-origin: bottom center;
+    text-shadow: 0 0 50px purple;
 }
 
 .world {
@@ -41,27 +41,27 @@
 }
 
 .w {
-    color: red;
+    color: pink;
 }
 
 .o {
-    color: orange;
+    color: red;
 }
 
 .r {
-    color: yellow;
+    color: orange;
 }
 
 .l {
-    color: green;
+    color: yellow;
 }
 
 .d {
-    color: blue;
+    color: green;
 }
 
 .simbol {
-    color: purple;
+    color: blue;
 }
 
 
