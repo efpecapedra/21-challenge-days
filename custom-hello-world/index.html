@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="text">
+        <div class="hello">
+            <div>H</div>
+            <div>E</div>
+            <div>L</div>
+            <div>L</div>
+            <div>O</div>
+        </div>
+        <img src="./img/arrow.svg" alt="arrow">
+        <div class="world">
+            <h1><span class="w">W</span><span class="o">O</span><span class="r">R</span><span class="l">L</span><span
+                    class="d">D</span><span class="simbol"> !</span></h1>
+        </div>
+    </div>
+</body>
+
+<script>
+    let deg = -6;
+    for (let i = 1; i <= 6; i++) {
+        let div = document.querySelector(".hello div:nth-child(" + i + ")");
+        div.style.transform = 'rotate(' + deg + 'deg)';
+        deg = deg + 30;
+    }
+</script>
+
+</html>

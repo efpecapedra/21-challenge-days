@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    display: flex;
+    margin: 0, auto;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+
+}
+
+.hello {
+    margin: auto;
+    transform-origin: bottom left;
+    transform: rotate(-52deg);
+    height: 150px;
+    width: 275px;
+}
+
+.hello div {
+
+    display: inline-block;
+    font-size: 6rem;
+    color: #000000;
+    height: 300px;
+    position: absolute;
+    transform-origin: bottom center;
+}
+
+.world {
+    font-family: 'DynaPuff', cursive;
+    background-color: black;
+    color: white;
+    width: 30rem;
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 35%;
+}
+
+.w {
+    color: red;
+}
+
+.o {
+    color: orange;
+}
+
+.r {
+    color: yellow;
+}
+
+.l {
+    color: green;
+}
+
+.d {
+    color: blue;
+}
+
+.simbol {
+    color: purple;
+}
+
+
+img {
+    width: 30rem;
+    margin: -8rem;
+}
