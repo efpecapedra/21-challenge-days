@@ -3,16 +3,21 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .text {
     display: flex;
-    margin: 0, auto;
     align-items: center;
     flex-direction: column;
-    margin: 10%;
+
 }
 
 .hello {
-    margin: auto;
     transform-origin: bottom left;
     transform: rotate(-52deg);
     height: 150px;
@@ -63,7 +68,6 @@
 .simbol {
     color: blue;
 }
-
 
 img {
     width: 30rem;
