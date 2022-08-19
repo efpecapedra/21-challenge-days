@@ -13,7 +13,52 @@
 </head>
 
 <body>
-    <button class="button-01" type="button">ANIMATED BUTTON</button>
+    <header>
+        <div>
+            <h3>
+                Altere o modo de exibição da tela
+            </h3>
+        </div>
+        <div class="footer-mode">
+            <button class="button-mode" type="checkbox" onclick="changeMode()">CHANGE MODE</button>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h2>Para me acompanhar nos próximos desafios mude o modo de tela</h2>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h1>
+                OBRIGADO !
+            </h1>
+        </div>
+        <nav>
+            <div>
+                <a href="https://instagram.com/eddy_pecapedra?igshid=YmMyMTA2M2Y=" img><img
+                        src="./img/icons8-instagram.svg" alt="Insta"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/efpecapedra/" img><img src="./img/icons8-linkedin.svg"
+                        alt="Linkedin"></a>
+            </div>
+            <div>
+                <a href="https://github.com/efpecapedra" img><img src="./img/icons8-github.svg" alt="Girhub"></a>
+            </div>
+        </nav>
+    </footer>
+
+
+    <script>
+        function changeMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
 </body>
 
 </html>
