@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0, auto;
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+}
+
+header {
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+
+header .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .title h1 {
+    font-family: 'Passero One', cursive;
+    font-size: 50px;
+}
+
+header .title nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 500px;
+}
+
+header .title h2 {
+    font-family: 'Passero One', cursive;
+    font-size: 25px;
+}
+
+header .title h2 a {
+    opacity: 0.5;
+    color: black;
+    text-decoration: none;
+}
+
+header .title h2 a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+main .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 50px 300px;
+}
+
+.line p {
+    font-family: 'Passero One', cursive;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav a {
+    opacity: 0.5;
+    color: black;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+.button-mode {
+    width: 200px;
+    height: 50px;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+    position: relative;
+
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowing 30s linear infinite;
+
+    font-family: 'Passero One', cursive;
+    font-size: 25px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
