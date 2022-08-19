@@ -41,7 +41,13 @@
                     </h2>
                 </div>
             </nav>
+            <div class="progress">
+                <div id="progressBar">
+                    <p></p>
+                </div>
+            </div>
         </div>
+
     </header>
 
     <main>
@@ -50,20 +56,23 @@
                 <p>
                     Repository
                 </p>
-                <a href="https://github.com/efpecapedra/21-challenge-days"><button class="button-mode" type="button">1
+                <a href="https://github.com/efpecapedra/21-challenge-days"><button class="button-mode" type="button"
+                        id="progress">1
                         DAY</button></a>
             </div>
             <div>
                 <p>
                     Hello World
                 </p>
-                <a href="./custom-hello-world/index.html"><button class="button-mode" type="button">2 DAY</button></a>
+                <a href="./custom-hello-world/index.html"><button class="button-mode" type="button" id="progress">2
+                        DAY</button></a>
             </div>
             <div>
                 <p>
                     Animated Button
                 </p>
-                <a href="./animated-button/index.html"><button class="button-mode" type="button">3 DAY</button></a>
+                <a href="./animated-button/index.html"><button class="button-mode" type="button" id="progress">3
+                        DAY</button></a>
             </div>
         </div>
 
@@ -72,19 +81,19 @@
                 <p>
                     Calculator
                 </p>
-                <a href="#"><button class="button-mode" type="button" disabled>4 DAY</button></a>
+                <a href="#"><button class="button-mode" type="button" id="progress" disabled>4 DAY</button></a>
             </div>
             <div>
                 <p>
                     Error 404
                 </p>
-                <a href="#"><button class="button-mode" type="button" disabled>5 DAY</button></a>
+                <a href="#"><button class="button-mode" type="button" id="progress" disabled>5 DAY</button></a>
             </div>
             <div>
                 <p>
                     Glassmorphism Effect
                 </p>
-                <a href="#"><button class="button-mode" type="button" disabled>6 DAY</button></a>
+                <a href="#"><button class="button-mode" type="button" id="progress" disabled>6 DAY</button></a>
             </div>
         </div>
 
@@ -107,12 +116,16 @@
         </nav>
     </footer>
 
-    <script>
-        function getURL() {
-            window.location.href = "";
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
 </html>
+
+
+<html>
+
+<body>
+    <input class="input" type="text" placeholder="fill me">
+    <button class="button">Click Me</button>
+</body>

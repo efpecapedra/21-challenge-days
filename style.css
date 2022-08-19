@@ -34,13 +34,24 @@ header {
 header .title {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
 header .title nav {
     display: flex;
     justify-content: space-between;
-    margin: 6rem 5rem;
+    width: 80%;
+}
+
+.progress {
+    border: black 1px solid;
+    width: 75%;
+    border-radius: 10px;
+}
+
+h4 {
+    font-family: 'Passero One', cursive;
+    font-size: .3rem;
 }
 
 main .line {
