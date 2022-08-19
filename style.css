@@ -1,3 +1,17 @@
+/*
+
+CSS STRUCTURE IN 2 SECTIONS
+
+LAYOUT PAGE
+STYLE FONTS
+EFECTS
+
+*/
+
+/* ----------- */
+/* LAYOUT PAGE */
+/* ----------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +21,10 @@ body {
     margin: 0, auto;
     min-height: 100vh;
     width: 100%;
-    background: white;
 }
 
 header {
-    margin-bottom: 100px;
-    padding-top: 50px;
+    padding-top: 3rem;
 }
 
 header .title {
@@ -21,20 +33,47 @@ header .title {
     text-align: center;
 }
 
-header .title h1 {
-    font-family: 'Passero One', cursive;
-    font-size: 50px;
-}
-
 header .title nav {
     display: flex;
     justify-content: space-between;
-    margin: 50px 500px;
+    margin: 6rem 5rem;
+}
+
+main .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 10rem;
+}
+
+footer {
+    margin-top: 10rem;
+    padding-bottom: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------- */
+/* STYLE FONTS */
+/* ----------- */
+
+body {
+    background: white;
+}
+
+header .title h1 {
+    font-family: 'Passero One', cursive;
+    font-size: 3rem;
 }
 
 header .title h2 {
     font-family: 'Passero One', cursive;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 header .title h2 a {
@@ -48,31 +87,14 @@ header .title h2 a:hover {
     opacity: 1;
 }
 
-main .line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin: 50px 300px;
-}
-
 .line p {
     font-family: 'Passero One', cursive;
-    font-size: 20px;
+    font-size: .75rem;
 }
 
-footer {
-    margin-top: 200px;
-    padding-bottom: 50px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* ----------- */
+/*   EFECTS    */
+/* ----------- */
 
 footer nav a {
     opacity: 0.5;
@@ -86,10 +108,10 @@ footer nav a:hover {
 }
 
 .button-mode {
-    width: 200px;
-    height: 50px;
+    width: 10rem;
+    height: 3rem;
 
-    margin-top: 10px;
+    margin-top: 1rem;
 
     cursor: pointer;
     position: relative;
@@ -105,7 +127,12 @@ footer nav a:hover {
     animation: glowing 30s linear infinite;
 
     font-family: 'Passero One', cursive;
-    font-size: 25px;
+    font-size: 2rem;
+}
+
+.button-mode:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
 }
 
 @keyframes glowing {
