@@ -12,6 +12,10 @@ EFECTS
 /* LAYOUT PAGE */
 /* ----------- */
 
+/* --------------------------------------- */
+/* On screens that are 425px or less */
+/* --------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -146,5 +150,230 @@ footer nav a:hover {
 
     100% {
         background-position: 0 0;
+    }
+}
+
+/* --------------------------------------- */
+/* On screens that are 425px or down */
+/* --------------------------------------- */
+@media only screen and (max-width: 426px) {
+
+
+    header {
+        padding-top: 1rem;
+    }
+
+    header .title nav {
+        margin: 2rem 2rem;
+    }
+
+    main .line {
+        margin: 2rem 3rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    /* ----------- */
+    /* STYLE FONTS */
+    /* ----------- */
+
+    header .title h1 {
+        font-size: 1.5rem;
+    }
+
+    header .title h2 {
+        font-size: .6rem;
+    }
+
+    .line p {
+        font-size: .5rem;
+    }
+
+    .redes {
+        width: 3rem;
+    }
+
+    /* ----------- */
+    /*   EFECTS    */
+    /* ----------- */
+
+    .button-mode {
+        width: 6rem;
+        height: 2rem;
+
+        margin-top: .5rem;
+
+        font-size: .9rem;
+    }
+}
+
+/* --------------------------------------- */
+/* On screens that are 768px or down */
+/* --------------------------------------- */
+@media only screen and (min-width: 426px) {
+
+    header {
+        padding-top: 1.5rem;
+    }
+
+    header .title nav {
+        margin: 3rem 3rem;
+    }
+
+    main .line {
+        margin: 3rem 5rem;
+    }
+
+    footer {
+        margin-top: 8rem;
+        padding-bottom: 5rem;
+    }
+
+    /* ----------- */
+    /* STYLE FONTS */
+    /* ----------- */
+
+    header .title h1 {
+        font-size: 3rem;
+    }
+
+    header .title h2 {
+        font-size: 1.2rem;
+    }
+
+    .line p {
+        font-size: 1rem;
+    }
+
+    .redes {
+        width: 5rem;
+    }
+
+    /* ----------- */
+    /*   EFECTS    */
+    /* ----------- */
+
+    .button-mode {
+        width: 10rem;
+        height: 3rem;
+
+        margin-top: 1rem;
+
+        font-size: 1.5rem;
+    }
+}
+
+/* --------------------------------------- */
+/* On screens that are 1024px or down */
+/* --------------------------------------- */
+@media only screen and (min-width: 769px) {
+
+    header {
+        padding-top: 2rem;
+    }
+
+    header .title nav {
+        margin: 4rem 4rem;
+    }
+
+    main .line {
+        margin: 4rem 7rem;
+    }
+
+    footer {
+        margin-top: 14rem;
+        padding-bottom: 7rem;
+    }
+
+    /* ----------- */
+    /* STYLE FONTS */
+    /* ----------- */
+
+    header .title h1 {
+        font-size: 4rem;
+    }
+
+    header .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .line p {
+        font-size: 1.5rem;
+    }
+
+    .redes {
+        width: 8rem;
+    }
+
+    /* ----------- */
+    /*   EFECTS    */
+    /* ----------- */
+
+    .button-mode {
+        width: 15rem;
+        height: 4rem;
+
+        margin-top: 1rem;
+
+        font-size: 2rem;
+    }
+}
+
+/* --------------------------------------- */
+/* On screens that are 2560px or down */
+/* --------------------------------------- */
+@media only screen and (min-width: 1441px) {
+
+    header {
+        padding-top: 4rem;
+    }
+
+    header .title nav {
+        margin: 8rem 8rem;
+    }
+
+    main .line {
+        margin: 8rem 14rem;
+    }
+
+    footer {
+        margin-top: 25rem;
+        padding-bottom: 14rem;
+    }
+
+    /* ----------- */
+    /* STYLE FONTS */
+    /* ----------- */
+
+    header .title h1 {
+        font-size: 8rem;
+    }
+
+    header .title h2 {
+        font-size: 3rem;
+    }
+
+    .line p {
+        font-size: 3rem;
+    }
+
+    .redes {
+        width: 15rem;
+    }
+
+    /* ----------- */
+    /*   EFECTS    */
+    /* ----------- */
+
+    .button-mode {
+        width: 30rem;
+        height: 8rem;
+
+        margin-top: 2rem;
+
+        font-size: 4rem;
     }
 }
