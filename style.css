@@ -154,10 +154,122 @@ footer nav a:hover {
 }
 
 /* --------------------------------------- */
-/* On screens that are 425px or down */
+/* On screens that are 320px or down */
 /* --------------------------------------- */
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 321px) {
 
+
+    header {
+        padding-top: 1rem;
+    }
+
+    header .title nav {
+        margin: 2rem 1rem;
+    }
+
+    main .line {
+        margin: 1.5rem 2.5rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    /* ----------- */
+    /* STYLE FONTS */
+    /* ----------- */
+
+    header .title h1 {
+        font-size: .9rem;
+    }
+
+    header .title h2 {
+        font-size: .5rem;
+    }
+
+    .line p {
+        font-size: .4rem;
+    }
+
+    .redes {
+        width: 2.5rem;
+    }
+
+    /* ----------- */
+    /*   EFECTS    */
+    /* ----------- */
+
+    .button-mode {
+        width: 4rem;
+        height: 1.5rem;
+        border-width: 1.5px;
+        margin-top: .3rem;
+        font-size: .6rem;
+    }
+}
+
+/* --------------------------------------- */
+/* On screens that are 320px or down */
+/* --------------------------------------- */
+
+@media only screen and (min-width: 321px) {
+
+
+    header {
+        padding-top: 1.5rem;
+    }
+
+    header .title nav {
+        margin: 2rem 2rem;
+    }
+
+    main .line {
+        margin: 1.5rem 3rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    /* ----------- */
+    /* STYLE FONTS */
+    /* ----------- */
+
+    header .title h1 {
+        font-size: 1.2rem;
+    }
+
+    header .title h2 {
+        font-size: .6rem;
+    }
+
+    .line p {
+        font-size: .4rem;
+    }
+
+    .redes {
+        width: 3rem;
+    }
+
+    /* ----------- */
+    /*   EFECTS    */
+    /* ----------- */
+
+    .button-mode {
+        width: 5rem;
+        height: 1.5rem;
+        border-width: 1.5px;
+        margin-top: .3rem;
+        font-size: .8rem;
+    }
+}
+
+/* --------------------------------------- */
+/* On screens that are 375px or down */
+/* --------------------------------------- */
+@media only screen and (min-width: 376px) {
 
     header {
         padding-top: 1rem;
@@ -168,7 +280,7 @@ footer nav a:hover {
     }
 
     main .line {
-        margin: 2rem 3rem;
+        margin: 1.5rem 2rem;
     }
 
     footer {
@@ -203,9 +315,8 @@ footer nav a:hover {
     .button-mode {
         width: 6rem;
         height: 2rem;
-
+        border-width: 2px;
         margin-top: .5rem;
-
         font-size: .9rem;
     }
 }
