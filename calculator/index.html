@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="a"><input type="text" class="display-box" id="result" disabled /></div>
+        <div class="b"><input type="button" value="%" onclick="display('')" /></div>
+        <div class="c"><input type="button" value="CE" onclick="display('')" /></div>
+        <div class="d"><input type="button" value="C" onclick="clearScreen()" id="btn" /></div>
+        <div class="e"><input type="button" value="÷" onclick="display('/')" /></div>
+        <div class="f"><input type="button" value="7" onclick="display('7')" /></div>
+        <div class="g"><input type="button" value="8" onclick="display('8')" /></div>
+        <div class="h"><input type="button" value="9" onclick="display('9')" /></div>
+        <div class="i"><input type="button" value="x" onclick="display('*')" /></div>
+        <div class="j"><input type="button" value="4" onclick="display('4')" /></div>
+        <div class="k"><input type="button" value="5" onclick="display('5')" /></div>
+        <div class="l"><input type="button" value="6" onclick="display('6')" /></div>
+        <div class="m"><input type="button" value="-" onclick="display('-')" /></div>
+        <div class="n"><input type="button" value="1" onclick="display('1')" /></div>
+        <div class="o"><input type="button" value="2" onclick="display('2')" /></div>
+        <div class="p"><input type="button" value="3" onclick="display('3')" /></div>
+        <div class="q"><input type="button" value="+" onclick="display('+')" /></div>
+        <div class="r"><input type="button" value="" onclick="display('x')" /></div>
+        <div class="s"><input type="button" value="0" onclick="display('0')" /></div>
+        <div class="t"><input type="button" value="." onclick="display('.')" /></div>
+        <div class="u"><input type="button" value="=" onclick="calculate()" id="equal" /></div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

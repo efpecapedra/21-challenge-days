@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0, auto;
+    min-height: 100vh;
+    display: flex;
+}
+
+section {
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "a a a a"
+        "b c d e"
+        "f g h i"
+        "j k l m"
+        "n o p q"
+        "r s t u";
+    grid-template-rows: 25% 15% 15% 15% 15% 15%;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    box-shadow: 2px 2px 7px 1px black;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 90%;
+    font-family: 'Passero One', cursive;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+input[type^="button"]:hover {
+    box-shadow: rgb(168, 168, 168, .2);
+}
+
+.display-box {
+    text-align: end;
+    margin: 2rem 0;
+    padding-right: 10%;
+    background-color: darkgrey;
+    border: none;
+}
+
+#btn {
+    background-color: rgb(196, 140, 140, .5);
+}
+
+#equal {
+    background-color: rgb(111, 111, 211, .5);
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+}
+
+.i {
+    grid-area: i;
+}
+
+.j {
+    grid-area: j;
+}
+
+.k {
+    grid-area: k;
+}
+
+.l {
+    grid-area: l;
+}
+
+.m {
+    grid-area: m;
+}
+
+.n {
+    grid-area: n;
+}
+
+.o {
+    grid-area: o;
+}
+
+.p {
+    grid-area: p;
+}
+
+.q {
+    grid-area: q;
+}
+
+.r {
+    grid-area: r;
+}
+
+.s {
+    grid-area: s;
+}
+
+.t {
+    grid-area: t;
+}
+
+.u {
+    grid-area: u;
+}
