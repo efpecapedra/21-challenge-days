@@ -319,6 +319,10 @@ footer nav a:hover {
         width: 3rem;
     }
 
+    h4 {
+        font-size: .4rem;
+    }
+
     /* ----------- */
     /*   EFECTS    */
     /* ----------- */
@@ -372,6 +376,10 @@ footer nav a:hover {
 
     .redes {
         width: 5rem;
+    }
+
+    h4 {
+        font-size: .5rem;
     }
 
     /* ----------- */
@@ -430,6 +438,10 @@ footer nav a:hover {
         width: 8rem;
     }
 
+    h4 {
+        font-size: 1rem;
+    }
+
     /* ----------- */
     /*   EFECTS    */
     /* ----------- */
@@ -486,12 +498,16 @@ footer nav a:hover {
         width: 15rem;
     }
 
+    h4 {
+        font-size: 1rem;
+    }
+
     /* ----------- */
     /*   EFECTS    */
     /* ----------- */
 
     .button-mode {
-        width: 30rem;
+        width: 35rem;
         height: 8rem;
 
         margin-top: 2rem;
