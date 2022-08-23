@@ -22,20 +22,13 @@
 
     h1 {
         font-family: 'Passero One', cursive;
-        font-size: calc(4vw);
+        font-size: 250%;
         color: black;
-    }
-
-    h2 {
-        font-family: 'Passero One', cursive;
-        font-size: calc(4vw);
-        margin: calc(4vw);
-        color: white;
     }
 
     h3 {
         font-family: 'Passero One', cursive;
-        font-size: calc(1vw);
+        font-size: 100%;
         color: white;
     }
 
@@ -65,7 +58,7 @@
     }
 
     .medias {
-        width: calc(5vw);
+        width: 100%;
     }
 
     /* DARK MODE */
@@ -99,19 +92,15 @@
 
     /* ---------- */
 
-    button {
-        margin: calc(1vw);
-    }
-
     .button-mode {
-        width: calc(8vw);
-        height: calc(2vw);
+        width: 100%;
+        height: 100%;
 
         cursor: pointer;
         position: relative;
 
         border-image-slice: 1;
-        border-width: 5%;
+        border-width: 3%;
         border-image-source: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
 
         background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -121,7 +110,7 @@
         animation: glowing 30s linear infinite;
 
         font-family: 'Passero One', cursive;
-        font-size: calc(1vw);
+        font-size: 100%;
     }
 
     .button-mode:before {
