@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Passero One', cursive;
+}
+
+header {
+    margin-bottom: 2%;
+}
+
+.home {
+    display: flex;
+    width: 4%;
+    position: absolute;
+    margin: 18% 0 0 57.8%;
+    z-index: 1;
+    animation: growing 3s ease-in;
+    animation-delay: 0s;
+    scale: (.9);
+}
+
+.home::before {
+    transform: scale(.1);
+}
+
+.home::after {
+    transform: scale(.9);
+}
+
+@keyframes growing {
+    0% {
+        transform: scale(.1);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.home img {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    display: flex;
+    font-size: calc(5vw);
+    align-items: center;
+    justify-content: center;
+}
+
+.animation {
+    position: absolute;
+    transform: rotate(0deg);
+    height: 100%;
+    animation: glowing 400s ease-in-out;
+    animation-delay: 1s;
+}
+
+.animation::before {
+    position: absolute;
+    transform: rotate(0deg);
+
+}
+
+.animation::after {
+    position: absolute;
+    transform: rotate(200deg);
+    animation: paused
+}
+
+@keyframes glowing {
+    .5% {
+        transform: rotate(200deg);
+    }
+
+    100% {
+        transform: rotate(200deg)
+    }
+}
+
+
+.error div {
+    height: calc(40vw);
+    position: absolute;
+    top: 0;
+    color: black;
+}
+
+.back {
+    display: flex;
+    font-size: calc(5vw);
+    align-items: center;
+    justify-content: center;
+}
+
+.back div {
+    height: calc(40vw);
+    position: absolute;
+    top: 0;
+    color: black;
+}
+
+main section {
+    display: flex;
+}
+
+.yin-yang {
+    display: flex;
+    width: 40%;
+    position: absolute;
+    justify-content: center;
+
+}
+
+.yin-yang img {
+    width: 100%;
+    transform: rotate(-90deg);
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.redes {
+    margin: 3% 0 0% 2%;
+    opacity: 0.5;
+    width: 5%;
+}
+
+.redes img {
+    width: 100%;
+}
+
+.redes:hover {
+    opacity: 1;
+}
+
+.powered {
+    display: flex;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+}
+
+.powered p {
+    font-size: calc(1.2vw);
+}
+
+@media only screen and (max-width: 321px) {
+    .animation {
+        height: 26%;
+    }
+}
+
+@media only screen and (min-width: 374px) {
+    .animation {
+        height: 30%;
+    }
+}
+
+@media only screen and (min-width: 424px) {
+    .animation {
+        height: 34%;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .animation {
+        height: 61%;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .animation {
+        height: 82%;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    .animation {
+        height: 115%;
+    }
+}
+
+@media only screen and (min-width: 2559px) {
+    .animation {
+        height: 205%;
+    }
+}
