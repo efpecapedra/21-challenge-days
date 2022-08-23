@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    padding-top: 3rem;
+    padding-top: 5%;
 }
 
 header .title {
@@ -40,18 +40,19 @@ header .title {
 header .title nav {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 75%;
+    margin: 5% 0 1% 0;
 }
 
 .progress {
     border: black 1px solid;
     width: 75%;
-    border-radius: 10px;
+    border-radius: calc(1vw);
 }
 
 h4 {
     font-family: 'Passero One', cursive;
-    font-size: .3rem;
+    font-size: calc(1vw);
 }
 
 main .line {
@@ -59,18 +60,22 @@ main .line {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: 3rem 10rem;
+    margin: 5% 15%;
 }
 
-footer {
-    margin-top: 10rem;
-    padding-bottom: 3rem;
-}
-
-nav {
+footer nav {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+nav div {
+    display: flex;
+}
+
+nav div+div {
+    margin-left: 3%;
 }
 
 /* ----------- */
@@ -83,12 +88,12 @@ body {
 
 header .title h1 {
     font-family: 'Passero One', cursive;
-    font-size: 3rem;
+    font-size: calc(5vw);
 }
 
 header .title h2 {
     font-family: 'Passero One', cursive;
-    font-size: 1.5rem;
+    font-size: calc(2vw);
 }
 
 header .title h2 a {
@@ -104,35 +109,35 @@ header .title h2 a:hover {
 
 .line p {
     font-family: 'Passero One', cursive;
-    font-size: .75rem;
+    font-size: calc(1.5vw);
+    z-index: -1;
 }
 
 /* ----------- */
 /*   EFECTS    */
 /* ----------- */
 
-footer nav a {
+.redes {
     opacity: 0.5;
-    color: black;
-    text-decoration: none;
+    width: 100%;
 }
 
-footer nav a:hover {
+.redes:hover {
     font-weight: bold;
     opacity: 1;
 }
 
 .button-mode {
-    width: 10rem;
-    height: 3rem;
+    width: calc(20vw);
+    height: calc(4vw);
 
-    margin-top: 1rem;
+    margin-top: .5%;
 
     cursor: pointer;
     position: relative;
 
     border-image-slice: 1;
-    border-width: 3px;
+    border-width: calc(.3vw);
     border-image-source: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
 
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -142,7 +147,7 @@ footer nav a:hover {
     animation: glowing 30s linear infinite;
 
     font-family: 'Passero One', cursive;
-    font-size: 2rem;
+    font-size: calc(2vw);
 }
 
 .button-mode:disabled {
@@ -161,357 +166,5 @@ footer nav a:hover {
 
     100% {
         background-position: 0 0;
-    }
-}
-
-/* --------------------------------------- */
-/* On screens that are 320px or down */
-/* --------------------------------------- */
-@media only screen and (max-width: 321px) {
-
-
-    header {
-        padding-top: 1rem;
-    }
-
-    header .title nav {
-        margin: 2rem 1rem;
-    }
-
-    main .line {
-        margin: 1.5rem 2.5rem;
-    }
-
-    footer {
-        margin-top: 4rem;
-        padding-bottom: 2rem;
-    }
-
-    /* ----------- */
-    /* STYLE FONTS */
-    /* ----------- */
-
-    header .title h1 {
-        font-size: .9rem;
-    }
-
-    header .title h2 {
-        font-size: .5rem;
-    }
-
-    .line p {
-        font-size: .4rem;
-    }
-
-    .redes {
-        width: 2.5rem;
-    }
-
-    /* ----------- */
-    /*   EFECTS    */
-    /* ----------- */
-
-    .button-mode {
-        width: 4rem;
-        height: 1.5rem;
-        border-width: 1.5px;
-        margin-top: .3rem;
-        font-size: .6rem;
-    }
-}
-
-/* --------------------------------------- */
-/* On screens that are 320px or down */
-/* --------------------------------------- */
-
-@media only screen and (min-width: 321px) {
-
-
-    header {
-        padding-top: 1.5rem;
-    }
-
-    header .title nav {
-        margin: 2rem 2rem;
-    }
-
-    main .line {
-        margin: 1.5rem 3rem;
-    }
-
-    footer {
-        margin-top: 4rem;
-        padding-bottom: 2rem;
-    }
-
-    /* ----------- */
-    /* STYLE FONTS */
-    /* ----------- */
-
-    header .title h1 {
-        font-size: 1.2rem;
-    }
-
-    header .title h2 {
-        font-size: .6rem;
-    }
-
-    .line p {
-        font-size: .4rem;
-    }
-
-    .redes {
-        width: 3rem;
-    }
-
-    /* ----------- */
-    /*   EFECTS    */
-    /* ----------- */
-
-    .button-mode {
-        width: 5rem;
-        height: 1.5rem;
-        border-width: 1.5px;
-        margin-top: .3rem;
-        font-size: .8rem;
-    }
-}
-
-/* --------------------------------------- */
-/* On screens that are 375px or down */
-/* --------------------------------------- */
-@media only screen and (min-width: 376px) {
-
-    header {
-        padding-top: 1rem;
-    }
-
-    header .title nav {
-        margin: 2rem 2rem;
-    }
-
-    main .line {
-        margin: 1.5rem 2rem;
-    }
-
-    footer {
-        margin-top: 5rem;
-        padding-bottom: 3rem;
-    }
-
-    /* ----------- */
-    /* STYLE FONTS */
-    /* ----------- */
-
-    header .title h1 {
-        font-size: 1.5rem;
-    }
-
-    header .title h2 {
-        font-size: .6rem;
-    }
-
-    .line p {
-        font-size: .5rem;
-    }
-
-    .redes {
-        width: 3rem;
-    }
-
-    h4 {
-        font-size: .4rem;
-    }
-
-    /* ----------- */
-    /*   EFECTS    */
-    /* ----------- */
-
-    .button-mode {
-        width: 6rem;
-        height: 2rem;
-        border-width: 2px;
-        margin-top: .5rem;
-        font-size: .9rem;
-    }
-}
-
-/* --------------------------------------- */
-/* On screens that are 768px or down */
-/* --------------------------------------- */
-@media only screen and (min-width: 426px) {
-
-    header {
-        padding-top: 1.5rem;
-    }
-
-    header .title nav {
-        margin: 3rem 3rem;
-    }
-
-    main .line {
-        margin: 3rem 5rem;
-    }
-
-    footer {
-        margin-top: 8rem;
-        padding-bottom: 5rem;
-    }
-
-    /* ----------- */
-    /* STYLE FONTS */
-    /* ----------- */
-
-    header .title h1 {
-        font-size: 3rem;
-    }
-
-    header .title h2 {
-        font-size: 1.2rem;
-    }
-
-    .line p {
-        font-size: 1rem;
-    }
-
-    .redes {
-        width: 5rem;
-    }
-
-    h4 {
-        font-size: .5rem;
-    }
-
-    /* ----------- */
-    /*   EFECTS    */
-    /* ----------- */
-
-    .button-mode {
-        width: 10rem;
-        height: 3rem;
-
-        margin-top: 1rem;
-
-        font-size: 1.5rem;
-    }
-}
-
-/* --------------------------------------- */
-/* On screens that are 1024px or down */
-/* --------------------------------------- */
-@media only screen and (min-width: 769px) {
-
-    header {
-        padding-top: 2rem;
-    }
-
-    header .title nav {
-        margin: 4rem 4rem;
-    }
-
-    main .line {
-        margin: 4rem 7rem;
-    }
-
-    footer {
-        margin-top: 14rem;
-        padding-bottom: 7rem;
-    }
-
-    /* ----------- */
-    /* STYLE FONTS */
-    /* ----------- */
-
-    header .title h1 {
-        font-size: 4rem;
-    }
-
-    header .title h2 {
-        font-size: 1.5rem;
-    }
-
-    .line p {
-        font-size: 1.5rem;
-    }
-
-    .redes {
-        width: 8rem;
-    }
-
-    h4 {
-        font-size: 1rem;
-    }
-
-    /* ----------- */
-    /*   EFECTS    */
-    /* ----------- */
-
-    .button-mode {
-        width: 15rem;
-        height: 4rem;
-
-        margin-top: 1rem;
-
-        font-size: 2rem;
-    }
-}
-
-/* --------------------------------------- */
-/* On screens that are 2560px or down */
-/* --------------------------------------- */
-@media only screen and (min-width: 1441px) {
-
-    header {
-        padding-top: 4rem;
-    }
-
-    header .title nav {
-        margin: 8rem 8rem;
-    }
-
-    main .line {
-        margin: 8rem 14rem;
-    }
-
-    footer {
-        margin-top: 25rem;
-        padding-bottom: 14rem;
-    }
-
-    /* ----------- */
-    /* STYLE FONTS */
-    /* ----------- */
-
-    header .title h1 {
-        font-size: 8rem;
-    }
-
-    header .title h2 {
-        font-size: 3rem;
-    }
-
-    .line p {
-        font-size: 3rem;
-    }
-
-    .redes {
-        width: 15rem;
-    }
-
-    h4 {
-        font-size: 1rem;
-    }
-
-    /* ----------- */
-    /*   EFECTS    */
-    /* ----------- */
-
-    .button-mode {
-        width: 35rem;
-        height: 8rem;
-
-        margin-top: 2rem;
-
-        font-size: 4rem;
     }
 }
