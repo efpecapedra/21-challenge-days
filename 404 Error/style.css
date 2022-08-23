@@ -10,18 +10,14 @@ body {
     font-family: 'Passero One', cursive;
 }
 
-header {
-    margin-bottom: 5%;
-}
-
 .home {
     display: flex;
-    width: 4%;
+    width: 8%;
     position: absolute;
-    margin: 18% 0 0 57.8%;
+    margin: 31% 0 0 63.3%;
     z-index: 1;
-    animation: op00 2s ease-in-out forwards;
-    animation-delay: 1.5s;
+    animation: op00 2s linear forwards;
+    animation-delay: 4s;
     opacity: 0;
 }
 
@@ -42,17 +38,18 @@ section {
 
 .error {
     display: flex;
-    font-size: calc(5vw);
+    font-size: calc(10vw);
     align-items: center;
     justify-content: center;
 }
 
 .error div {
-    height: calc(40vw);
+    height: calc(70vw);
     position: absolute;
-    top: 10%;
+    top: 0;
     color: black;
-    animation: op01 .6s ease-in-out forwards;
+    animation: op01 .6s linear forwards;
+    animation-delay: 2s;
 }
 
 @keyframes op01 {
@@ -67,24 +64,23 @@ section {
 
 .back {
     display: flex;
-    font-size: calc(5vw);
+    font-size: calc(10vw);
     align-items: center;
     justify-content: center;
 }
 
 .back div {
-    height: calc(40vw);
+    height: calc(70vw);
     position: absolute;
-    top: 10%;
+    top: 0;
     color: black;
-    animation: op02 2s ease-in-out forwards;
-    animation-delay: 1.5s;
+    animation: op02 4.2s linear forwards;
     opacity: 0;
 }
 
 @keyframes op02 {
     90% {
-        opacity: 1;
+        opacity: 0;
     }
 
     100% {
@@ -98,7 +94,7 @@ main section {
 
 .yin-yang {
     display: flex;
-    width: 40%;
+    width: 70%;
     position: absolute;
     justify-content: center;
 }
@@ -107,7 +103,7 @@ main section {
     width: 100%;
     transform: rotate(-90deg);
     animation: glowing 2.5s linear forwards;
-    animation-delay: 0s;
+    animation-delay: 2s;
 }
 
 @keyframes glowing {
@@ -122,15 +118,14 @@ main section {
 
 footer nav {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    z-index: 2;
+
+
 }
 
 .redes {
-    margin: 3% 0 0% 2%;
+    margin: 75% 0 0% 2%;
     opacity: 0.5;
-    width: 5%;
+    width: 8%;
 }
 
 .redes img {
@@ -144,10 +139,10 @@ footer nav {
 .powered {
     display: flex;
     position: fixed;
-    top: 1%;
+    bottom: 1%;
     right: 1%;
 }
 
 .powered p {
-    font-size: calc(1.2vw);
+    font-size: calc(2vw);
 }
