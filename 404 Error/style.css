@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 .home {
@@ -20,26 +20,14 @@ header {
     position: absolute;
     margin: 18% 0 0 57.8%;
     z-index: 1;
-    animation: growing 3s ease-in;
-    animation-delay: 0s;
-    scale: (.9);
+    animation: op00 2s ease-in-out forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
 }
 
-.home::before {
-    transform: scale(.1);
-}
-
-.home::after {
-    transform: scale(.9);
-}
-
-@keyframes growing {
-    0% {
-        transform: scale(.1);
-    }
-
+@keyframes op00 {
     100% {
-        transform: scale(1)
+        opacity: 1;
     }
 }
 
@@ -59,42 +47,22 @@ section {
     justify-content: center;
 }
 
-.animation {
-    position: absolute;
-    transform: rotate(0deg);
-    height: 100%;
-    animation: glowing 400s ease-in-out;
-    animation-delay: 1s;
-}
-
-.animation::before {
-    position: absolute;
-    transform: rotate(0deg);
-
-}
-
-.animation::after {
-    position: absolute;
-    transform: rotate(200deg);
-    animation: paused
-}
-
-@keyframes glowing {
-    .5% {
-        transform: rotate(200deg);
-    }
-
-    100% {
-        transform: rotate(200deg)
-    }
-}
-
-
 .error div {
     height: calc(40vw);
     position: absolute;
-    top: 0;
+    top: 10%;
     color: black;
+    animation: op01 .6s ease-in-out forwards;
+}
+
+@keyframes op01 {
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .back {
@@ -107,8 +75,21 @@ section {
 .back div {
     height: calc(40vw);
     position: absolute;
-    top: 0;
+    top: 10%;
     color: black;
+    animation: op02 2s ease-in-out forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@keyframes op02 {
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 main section {
@@ -120,18 +101,30 @@ main section {
     width: 40%;
     position: absolute;
     justify-content: center;
-
 }
 
 .yin-yang img {
     width: 100%;
     transform: rotate(-90deg);
+    animation: glowing 2.5s linear forwards;
+    animation-delay: 0s;
+}
+
+@keyframes glowing {
+    50% {
+        transform: rotate(270deg)
+    }
+
+    100% {
+        transform: rotate(630deg)
+    }
 }
 
 footer nav {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    z-index: 2;
 }
 
 .redes {
@@ -157,46 +150,4 @@ footer nav {
 
 .powered p {
     font-size: calc(1.2vw);
-}
-
-@media only screen and (max-width: 321px) {
-    .animation {
-        height: 26%;
-    }
-}
-
-@media only screen and (min-width: 374px) {
-    .animation {
-        height: 30%;
-    }
-}
-
-@media only screen and (min-width: 424px) {
-    .animation {
-        height: 34%;
-    }
-}
-
-@media only screen and (min-width: 767px) {
-    .animation {
-        height: 61%;
-    }
-}
-
-@media only screen and (min-width: 1023px) {
-    .animation {
-        height: 82%;
-    }
-}
-
-@media only screen and (min-width: 1439px) {
-    .animation {
-        height: 115%;
-    }
-}
-
-@media only screen and (min-width: 2559px) {
-    .animation {
-        height: 205%;
-    }
 }
