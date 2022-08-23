@@ -1,8 +1,3 @@
-/* --------------------------------------- */
-/* On screens that are 320px or down */
-/* --------------------------------------- */
-@media only screen and (max-width: 321px) {
-
     /* LAYOUT PAGE */
 
     * {
@@ -22,26 +17,25 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
-        margin: 0 0rem 0rem 0rem;
+        padding: 10%;
     }
 
     h1 {
         font-family: 'Passero One', cursive;
-        font-size: 1rem;
+        font-size: calc(4vw);
         color: black;
     }
 
     h2 {
         font-family: 'Passero One', cursive;
-        font-size: .5rem;
-        margin: .5rem;
+        font-size: calc(4vw);
+        margin: calc(4vw);
         color: white;
     }
 
     h3 {
         font-family: 'Passero One', cursive;
-        font-size: .5rem;
+        font-size: calc(1vw);
         color: white;
     }
 
@@ -50,7 +44,7 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 5%;
     }
 
     footer {
@@ -71,7 +65,7 @@
     }
 
     .medias {
-        width: 3rem;
+        width: calc(5vw);
     }
 
     /* DARK MODE */
@@ -106,18 +100,18 @@
     /* ---------- */
 
     button {
-        margin: .5rem;
+        margin: calc(1vw);
     }
 
     .button-mode {
-        width: 4rem;
-        height: 1remx;
+        width: calc(8vw);
+        height: calc(2vw);
 
         cursor: pointer;
         position: relative;
 
         border-image-slice: 1;
-        border-width: 1px;
+        border-width: 5%;
         border-image-source: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
 
         background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -127,24 +121,20 @@
         animation: glowing 30s linear infinite;
 
         font-family: 'Passero One', cursive;
-        font-size: .5rem;
+        font-size: calc(1vw);
     }
 
     .button-mode:before {
         content: "";
-        width: 4rem;
-        height: 1rem;
-
         position: absolute;
         width: 100%;
         height: 100%;
         background: white;
-        transition: .4s;
+        transition: 1s;
         top: 0px;
         left: 0px;
-
         z-index: -1;
-
+        animation: glowing 10s linear infinite;
     }
 
 
@@ -161,169 +151,3 @@
             background-position: 0 0;
         }
     }
-}
-
-/* --------------------------------------- */
-/* On screens that are 320px or more */
-/* --------------------------------------- */
-@media only screen and (min-width: 321px) {
-
-    /* LAYOUT PAGE */
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        margin: 0, auto;
-        min-height: 100vh;
-        width: 100%;
-        background: black;
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        margin: 0 0rem 0rem 0rem;
-    }
-
-    h1 {
-        font-family: 'Passero One', cursive;
-        font-size: 1rem;
-        color: black;
-    }
-
-    h2 {
-        font-family: 'Passero One', cursive;
-        font-size: .5rem;
-        margin: .5rem;
-        color: white;
-    }
-
-    h3 {
-        font-family: 'Passero One', cursive;
-        font-size: .5rem;
-        color: white;
-    }
-
-    main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    footer h1 {
-        display: flex;
-        justify-content: center;
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .medias {
-        width: 3rem;
-    }
-
-    /* DARK MODE */
-
-    .dark-mode {
-        background: white;
-    }
-
-    .dark-mode h1 {
-        color: black;
-    }
-
-    .dark-mode h2 {
-        color: white;
-    }
-
-    .dark-mode h3 {
-        color: black;
-    }
-
-    .dark-mode .button-mode::after {
-        z-index: -1;
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: black;
-        left: 0;
-        top: 0;
-    }
-
-    /* ---------- */
-
-    button {
-        margin: .5rem;
-    }
-
-    .button-mode {
-        width: 4rem;
-        height: 1remx;
-
-        cursor: pointer;
-        position: relative;
-
-        border-image-slice: 1;
-        border-width: 1px;
-        border-image-source: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-
-        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-        background-size: 500%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: glowing 30s linear infinite;
-
-        font-family: 'Passero One', cursive;
-        font-size: .5rem;
-    }
-
-    .button-mode:before {
-        content: "";
-        width: 4rem;
-        height: 1rem;
-
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: white;
-        transition: .4s;
-        top: 0px;
-        left: 0px;
-
-        z-index: -1;
-
-    }
-
-
-    @keyframes glowing {
-        0% {
-            background-position: 0 0;
-        }
-
-        50% {
-            background-position: 400% 0;
-        }
-
-        100% {
-            background-position: 0 0;
-        }
-    }
-}
